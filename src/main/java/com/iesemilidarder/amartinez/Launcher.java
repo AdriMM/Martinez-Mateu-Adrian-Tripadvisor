@@ -1,5 +1,6 @@
 package com.iesemilidarder.amartinez;
 
+import com.iesemilidarder.amartinez.data.Flight;
 import com.iesemilidarder.amartinez.data.Hotel;
 
 public class Launcher {
@@ -15,6 +16,7 @@ public class Launcher {
         System.out.println("Precio por noche: " + hotel.getPrice());
         hotel.star();
         hotel.date();
+
 
     }
 }
