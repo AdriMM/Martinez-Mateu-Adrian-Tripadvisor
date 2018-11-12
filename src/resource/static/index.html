@@ -3,34 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <title>TripAdrivisor</title>
 </head>
 <body>
 
 <header>
+    <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">TripAdrivisor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <button type="button" class="btn btn-default">
-                    <span class="glyphicon glyphicon-home"></span>
-                </button>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#">Vuelos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Hoteles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Restaurantes</a>
                 </li>
             </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Inicia Sesion</button>
         </div>
     </nav>
 </header>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<main role="main" class="container">
+
+    <div class="row">
+        <div class="col-6">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="material-icons">flight_takeoff</i></span>
+                    <input type="text" class="form-control" placeholder="Busca tu vuelo de ida" >
+                </div>
+        </div>
+        <div class="col-6">
+            <div class="input-group">
+                <span class="input-group-text"><i class="material-icons">flight_land</i></span>
+                <input type="text" class="form-control" placeholder="Busca tu vuelo de vuelta" >
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="input-group">
+                <span class="input-group-text"><i class="material-icons">calendar_today</i></span>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="input-group">
+                <span class="input-group-text"><i class="material-icons">calendar_today</i></span>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="input-group">
+                <span class="input-group-text"><i class="material-icons">person</i></span>
+                <select id="inputState" class="form-control">
+                    <option selected>Número de personas</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+<div role="main" class="container">
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Hilton Paris Charles de Gaulle Airport <span class="text-muted">(Reservado por última vez hace 3 horas )</span></h2>
+            <p class="lead">Increible Hotel de 4 estrellas situado en el centro de Francia (Roissy-en-France), con piscina cubierta y restaurante. Con un aspecto moderno que enamora a sus clientes.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="../img/Hilton.jpg" alt="Hotel Hilton">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Hotel Atlantico Madrid <span class="text-muted">¡Reseva ya!</span></h2>
+            <p class="lead">Hotel de lujo de 4 estrellas, situado en un edificio neoclásico ornamentado. Cerca de la Plaza Mayor de Madrid. Dispone de una espectacular terraza en la azotera con vistas increibles que te harán enamorarte de Madrid.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="../img/Atlantico.jpg" alt="Hotel Atlantico">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Park Plaza Westminster Bridge London <span class="text-muted">¡Increibles vistas!</span></h2>
+            <p class="lead">Si quieres ir a Londres no te lo pienses más y ven a este increible Hotel de 4 estrellas, con spa, 2 restaurantes, una increible piscina cubierta, gimnasio y lo más importante y que nos hace únicos: las mejores vistas al Big Ben de todo Londres. </p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="../img/Park.jpg" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+</div>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2018 TripAdrivisor</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Terminos</a></li>
+        <li class="list-inline-item"><a href="#">Politica de Privacidad</a></li>
+        <li class="list-inline-item"><a href="#">Contactanos</a></li>
+    </ul>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 </html>

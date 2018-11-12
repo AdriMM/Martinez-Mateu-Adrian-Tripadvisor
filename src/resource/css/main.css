@@ -1,6 +1,7 @@
-.btn{
-    background-color: transparent;}
+.container{
+    padding-top: 140px;
+}
 
-.glyphicon{
-    background-color: white;
+.row{
+    padding-top: 10px;
 }
